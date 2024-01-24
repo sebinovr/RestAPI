@@ -5,9 +5,7 @@ const bodyParser = require('body-parser')
 
 //conectar mongo
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/restapi', {
-    useNewUrlParser: true
-})
+mongoose.connect('mongodb://localhost/restapi')
 
 //servidor
 const app = express()
